@@ -1,28 +1,28 @@
 <template>
   <div>
-    <div class="border-b">
+    <div class="sticky top-0 left-0 bg-white border-b z-100">
       <div class="text-xl font-semibold">
         Fresher Front-end developer (HTML, CSS, JS, VueJs)
       </div>
-      <div class="text-gray-400 text-sm">Fsoft</div>
-      <div class="flex flex-row items-center justify-between my-5 gap-5">
+      <div class="text-sm text-gray-400">Fsoft</div>
+      <div class="flex flex-row items-center justify-between gap-5 my-5">
         <button
-          class="px-5 py-3 bg-red-600 text-white font-semibold w-full rounded"
+          class="w-full px-5 py-3 font-semibold text-white bg-red-600 rounded"
         >
           Apply now
         </button>
         <span class="block cursor-pointer">
-          <font-awesome-icon icon=" fa-heart" class="text-3xl px-3" />
+          <font-awesome-icon icon=" fa-heart" class="px-3 text-3xl" />
         </span>
       </div>
     </div>
     <div class="overflow-auto h-3/4">
-      <div class="border-b py-5 flex flex-col gap-3">
+      <div class="flex flex-col gap-3 py-5 border-b">
         <div class="flex flex-row items-center justify-start gap-3 mt-3">
           <div
             v-for="tag in tags"
             :key="tag"
-            class="cursor-pointer hover:border-red-500 border text-gray-500 hover:text-red-600 px-3 py-1 uppercase text-xs font-medium"
+            class="px-3 py-1 text-xs font-medium text-gray-500 uppercase border cursor-pointer hover:border-red-500 hover:text-red-600"
           >
             {{ tag }}
           </div>
@@ -30,7 +30,7 @@
         <div
           class="flex flex-row items-center justify-start gap-3 text-sm text-green-500"
         >
-          <i class="text-green-500 block">
+          <i class="block text-green-500">
             <font-awesome-icon icon="fa-sharp fa-sack-dollar" />
           </i>
           <span>Thoả thuận</span>
@@ -63,7 +63,7 @@
       </div>
       <div class="my-3">
         <div class="text-xl font-medium">Job Description</div>
-        <ul class="list-disc ml-10 mt-3">
+        <ul class="mt-3 ml-10 list-disc">
           <li>
             Collaborate with a team of developers and designers to develop
             mobile application on multiple platforms
@@ -77,7 +77,7 @@
       </div>
       <div class="my-3">
         <div class="text-xl font-medium">Your Skills and Experience</div>
-        <ul class="list-disc ml-10 mt-3">
+        <ul class="mt-3 ml-10 list-disc">
           <li>English language proficiency</li>
           <li>Highly proficient in rendering components with Native APIs</li>
           <li>

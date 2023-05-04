@@ -14,6 +14,16 @@ export default {
     HeaderNav,
     FooterDefault,
 },
+computed: {
+    pageTitle() {
+      return "My Page Title";
+    },
+  },
+  watch: {
+    pageTitle(newTitle) {
+      document.title = newTitle;
+    },
+  },
 };
 </script>
 

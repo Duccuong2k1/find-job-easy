@@ -3,12 +3,14 @@ import HomeView from "../views/HomeView.vue";
 import NotFound from "../views/NotFound.vue";
 import AllJobsView from "../views/AllJobsView.vue";
 import ITStoryView from "../views/ITStoryView.vue";
+import DetailCompany from "../views/ITStoryView.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
     component: HomeView,
+    title: "Jobs easy ",
   },
   {
     path: "/all-jobs",
@@ -24,6 +26,11 @@ const routes = [
     path: "/",
     name: "it-companies",
     component: ITStoryView,
+  },
+  {
+    path: "/company/:companyId",
+    name: "detail-company",
+    component: DetailCompany,
   },
   // call page 404
   {

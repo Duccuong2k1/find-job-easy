@@ -1,23 +1,25 @@
 <template>
-  <div class="container mx-auto bg-white mt-5 p-3 flex flex-row gap-5">
-    <div class="list-job w-2/5">
+  <div
+    class="container flex flex-col gap-5 p-3 mx-auto mt-5 bg-white lg:flex-row"
+  >
+    <div class="w-full lg:w-2/5 list-job">
       <div class="text-2xl font-medium">
         10 Job Recommended for nguyen Van a
       </div>
       <ListJobs />
     </div>
-    <div class="px-5 flex-1">
+    <div class="flex-1 px-5">
       <JobDetail />
     </div>
   </div>
-  <div class="container mx-auto py-5 mt-8">
+  <div class="container py-5 mx-auto mt-8">
     <div class="text-3xl font-semibold capitalize">Top Employers</div>
     <ListEmployer />
   </div>
-  <div class="container mx-auto py-5">
+  <div class="container py-5 mx-auto">
     <div class="text-3xl font-semibold capitalize">newest blog</div>
     <router-link to="/" class="flex flex-row items-center gap-2 my-2">
-      <span class="text-blue-700 capitalize text-sm font-semibold"
+      <span class="text-sm font-semibold text-blue-700 capitalize"
         >view all</span
       >
       <font-awesome-icon icon=" fa-caret-right" class="text-blue-600" />
